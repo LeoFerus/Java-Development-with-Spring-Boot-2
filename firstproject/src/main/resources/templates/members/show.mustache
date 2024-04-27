@@ -1,0 +1,26 @@
+{{>layouts/header}}
+<table class="table">
+    <a href = "/members/{{member.id}}/edit">Edit</a>
+    <a href = "/members">Go to Member List</a>
+    <thead>
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Info</th>
+        <th scope="col">Password</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    {{#member}}
+        <tr>
+            <th>{{id}}</th>
+            <td>{{info}}</td>
+            <td>{{password}}</td>
+        </tr>
+    {{/member}}
+    </tbody>
+</table>
+
+
+
+{{>layouts/footer}}
